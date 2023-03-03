@@ -12,7 +12,6 @@ export default function SeasonNowCarrosel() {
     const fetch = async () => {
       const animes = await getSeasonNow();
       setAnimesSNow(animes.data);
-      console.log(animes.data);
     };
     fetch();
   }, []);
