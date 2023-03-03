@@ -14,7 +14,7 @@ export default function MenuDropDown() {
         >
           <div className="menuTitle" href="l">Menu 1</div>
           {activeMenu && (
-            <ul>
+            <ul className="menuList">
               <li><a href="l">Submenu 1</a></li>
               <li><a href="l">Submenu 2</a></li>
               <li><a href="l">Submenu 3</a></li>
@@ -29,7 +29,7 @@ export default function MenuDropDown() {
         >
           <div className="menuTitle" href="l">Menu 1</div>
           {activeMenu && (
-            <ul>
+            <ul className="menuList">
               <li><a href="l">Submenu 1</a></li>
               <li><a href="l">Submenu 2</a></li>
               <li><a href="l">Submenu 33</a></li>
@@ -44,7 +44,7 @@ export default function MenuDropDown() {
         >
           <div className="menuTitle" href="l">Menu 1</div>
           {activeMenu && (
-            <ul>
+            <ul className="menuList">
               <li><a href="l">Submenu 1</a></li>
               <li><a href="l">Submenu 2</a></li>
               <li><a href="l">Submenu 3</a></li>

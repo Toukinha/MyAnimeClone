@@ -1,14 +1,15 @@
 import React from 'react';
 import './css/Header.css';
 import { AiOutlineSearch } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+
 import MenuDropDown from './MenuDropDown';
-import Carrosel from '../Home/Carrosel';
 
 export default function Header() {
   return (
-    <div className="mainContainer">
+    <div className="headerContainer">
       <header>
-        <img src="https://fontmeme.com/permalink/230301/a3a5ba1883fa4d9939836a3559be5f0b.png" alt="fonte-de-haikyu" border="0" />
+        <Link to="/"><img src="https://fontmeme.com/permalink/230301/a3a5ba1883fa4d9939836a3559be5f0b.png" alt="fonte-de-haikyu" border="0" /></Link>
       </header>
       <div className="menuNav">
         <MenuDropDown />
@@ -29,7 +30,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <Carrosel />
     </div>
   );
 }

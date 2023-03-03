@@ -1,12 +1,16 @@
 import './App.css';
-import Header from './components/header/Header';
-// import MenuDropDown from './components/header/MenuDropDown';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Main from './pages/Main';
+import AnimeDetails from './pages/AnimeDetails';
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={ <Main /> } />
+        <Route exact path="/anime/:id" element={ <AnimeDetails /> } />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

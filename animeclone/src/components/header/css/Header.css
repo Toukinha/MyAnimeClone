@@ -94,3 +94,6 @@ header {
 nav ul li a {
   color: white;
 }
+.menuList {
+  z-index: 1;
+}
