@@ -1,22 +1,22 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useMemo, useState } from 'react';
-import getSeasonNow from '../services/fetchs/getSeason';
 import AnimeContext from './AnimeContext';
 
 function AnimeProvider({ children }) {
-  const [aniSeasonNow, SetAniSeasonNow] = useState([]);
+  const [animeDetails, setAnimeDetails] = useState(false);
 
-  useEffect(() => {
-    const getSeasonN = async () => {
-      const animeSeasonNow = await getSeasonNow();
-      SetAniSeasonNow(animeSeasonNow);
-    };
-    getSeasonN();
-  }, []);
+  // useEffect(() => {
+  //   const getSeasonN = async () => {
+  //     const anime = await getAnimeById(id);
+  //     setAnimeDetails(anime);
+  //   };
+  //   getSeasonN();
+  // }, []);
 
   const things = useMemo(() => ({
-    aniSeasonNow,
-  }), [aniSeasonNow]);
+    animeDetails,
+    setAnimeDetails,
+  }), [animeDetails]);
 
   return (
     <AnimeContext.Provider value={ things }>

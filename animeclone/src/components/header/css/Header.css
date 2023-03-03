@@ -72,7 +72,6 @@ nav li:hover>ul {
   background-color: var(--pink-color);
   display: flex;
   justify-content: space-between;
-  border: 1px solid #ccc;
 }
 
 header {

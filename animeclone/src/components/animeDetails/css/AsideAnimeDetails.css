@@ -1,6 +1,24 @@
 .asideAnimeDetails {
+  display: flex;
+  flex-direction: column;
   background-color: gray;
-  border: 1px solid white;
   width: 22%;
-  height: 100vh;
+  height: auto;
+}
+
+.asideAnimeDetails p {
+  margin-bottom: 0.9rem;
+}
+.asideAnimeDetails h4 {
+  margin-bottom: 0.7rem;
+}
+.asideAnimeDetails img {
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MainConatinerAnimeDetails {
+  display: flex;
 }
